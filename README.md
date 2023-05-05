@@ -27,9 +27,9 @@ make up
     ```
 
 ## Reconnect
-    ```
-    docker network connect rabbitnet rabbitmq-server-8113-rmq0-1
-    ```
+```
+docker network connect rabbitnet rabbitmq-server-8113-rmq0-1
+```
 
 ## Error
 
