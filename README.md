@@ -83,3 +83,13 @@ Note the `Feature flags: checking nodes...` message that happens right at the en
 2023-05-05 22:57:20 [error] <0.2189.0>  {rabbit_node_monitor,do_run_outside_app_fun,1,
 2023-05-05 22:57:20 [error] <0.2189.0>                       [{file,"rabbit_node_monitor.erl"},{line,795}]}]
 ```
+
+# `epmd` error
+
+```
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> BOOT FAILED
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> ===========
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> Error during startup: {error,no_epmd_port}
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> 
+2023-05-19T15:22:11.865653+00:00 warning: FORMATTER CRASH: {"epmd does not know us, re-registering ~s at port ~b",["rabbit",undefined]}
+```

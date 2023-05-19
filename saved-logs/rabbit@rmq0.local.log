@@ -1,0 +1,752 @@
+2023-05-19 15:17:29.317850+00:00 [notice] <0.230.0> Logging: configured log handlers are now ACTIVE
+2023-05-19 15:17:29.317932+00:00 [info] <0.230.0> Logging: testing info log level
+2023-05-19 15:17:29.317994+00:00 [notice] <0.230.0> Logging: testing notice log level
+2023-05-19 15:17:29.318034+00:00 [warning] <0.230.0> Logging: testing warning log level
+2023-05-19 15:17:29.318067+00:00 [error] <0.230.0> Logging: testing error log level
+2023-05-19 15:17:29.318125+00:00 [critical] <0.230.0> Logging: testing critical log level
+2023-05-19 15:17:29.318162+00:00 [alert] <0.230.0> Logging: testing alert log level
+2023-05-19 15:17:29.318194+00:00 [emergency] <0.230.0> Logging: testing emergency log level
+2023-05-19 15:17:29.486545+00:00 [info] <0.230.0> ra: starting system quorum_queues
+2023-05-19 15:17:29.487033+00:00 [info] <0.230.0> starting Ra system: quorum_queues in directory: /var/lib/rabbitmq/mnesia/rabbit@rmq0.local/quorum/rabbit@rmq0.local
+2023-05-19 15:17:29.535765+00:00 [info] <0.270.0> ra system 'quorum_queues' running pre init for 0 registered servers
+2023-05-19 15:17:29.542604+00:00 [info] <0.271.0> ra: meta data store initialised for system quorum_queues. 0 record(s) recovered
+2023-05-19 15:17:29.554015+00:00 [notice] <0.276.0> WAL: ra_log_wal init, open tbls: ra_log_open_mem_tables, closed tbls: ra_log_closed_mem_tables
+2023-05-19 15:17:29.562817+00:00 [info] <0.230.0> ra: starting system coordination
+2023-05-19 15:17:29.563242+00:00 [info] <0.230.0> starting Ra system: coordination in directory: /var/lib/rabbitmq/mnesia/rabbit@rmq0.local/coordination/rabbit@rmq0.local
+2023-05-19 15:17:29.564004+00:00 [info] <0.283.0> ra system 'coordination' running pre init for 0 registered servers
+2023-05-19 15:17:29.564448+00:00 [info] <0.284.0> ra: meta data store initialised for system coordination. 0 record(s) recovered
+2023-05-19 15:17:29.564628+00:00 [notice] <0.289.0> WAL: ra_coordination_log_wal init, open tbls: ra_coordination_log_open_mem_tables, closed tbls: ra_coordination_log_closed_mem_tables
+2023-05-19 15:17:29.567452+00:00 [info] <0.230.0> 
+2023-05-19 15:17:29.567452+00:00 [info] <0.230.0>  Starting RabbitMQ 3.11.16 on Erlang 25.3.2 [jit]
+2023-05-19 15:17:29.567452+00:00 [info] <0.230.0>  Copyright (c) 2007-2023 VMware, Inc. or its affiliates.
+2023-05-19 15:17:29.567452+00:00 [info] <0.230.0>  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0> 
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>  node           : rabbit@rmq0.local
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>  home dir       : /var/lib/rabbitmq
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>  config file(s) : /etc/rabbitmq/advanced.config
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>                 : /etc/rabbitmq/rabbitmq.conf
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>                 : /etc/rabbitmq/conf.d/10-defaults.conf
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>  cookie hash    : Cxa20p+SvDL0F/FPLBbqKg==
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>  log(s)         : /var/log/rabbitmq/rabbit@rmq0.local.log
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>                 : /var/log/rabbitmq/rabbit@rmq0.local_upgrade.log
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>                 : <stdout>
+2023-05-19 15:17:29.568623+00:00 [info] <0.230.0>  database dir   : /var/lib/rabbitmq/mnesia/rabbit@rmq0.local
+2023-05-19 15:17:33.594224+00:00 [info] <0.230.0> Running boot step pre_boot defined by app rabbit
+2023-05-19 15:17:33.594312+00:00 [info] <0.230.0> Running boot step rabbit_global_counters defined by app rabbit
+2023-05-19 15:17:33.594777+00:00 [info] <0.230.0> Running boot step rabbit_osiris_metrics defined by app rabbit
+2023-05-19 15:17:33.594973+00:00 [info] <0.230.0> Running boot step rabbit_core_metrics defined by app rabbit
+2023-05-19 15:17:33.595724+00:00 [info] <0.230.0> Running boot step rabbit_alarm defined by app rabbit
+2023-05-19 15:17:33.598577+00:00 [info] <0.304.0> Memory high watermark set to 12788 MiB (13409909145 bytes) of 31971 MiB (33524772864 bytes) total
+2023-05-19 15:17:33.601400+00:00 [info] <0.306.0> Enabling free disk space monitoring (disk free space: 253393108992, total memory: 33524772864)
+2023-05-19 15:17:33.601501+00:00 [info] <0.306.0> Disk free limit set to 50MB
+2023-05-19 15:17:33.602841+00:00 [info] <0.230.0> Running boot step code_server_cache defined by app rabbit
+2023-05-19 15:17:33.603087+00:00 [info] <0.230.0> Running boot step file_handle_cache defined by app rabbit
+2023-05-19 15:17:33.603409+00:00 [info] <0.309.0> Limiting to approx 1073741719 file handles (966367545 sockets)
+2023-05-19 15:17:33.603545+00:00 [info] <0.310.0> FHC read buffering: OFF
+2023-05-19 15:17:33.603613+00:00 [info] <0.310.0> FHC write buffering: ON
+2023-05-19 15:17:33.605059+00:00 [info] <0.230.0> Running boot step worker_pool defined by app rabbit
+2023-05-19 15:17:33.605214+00:00 [info] <0.291.0> Will use 8 processes for default worker pool
+2023-05-19 15:17:33.605263+00:00 [info] <0.291.0> Starting worker pool 'worker_pool' with 8 processes in it
+2023-05-19 15:17:33.605739+00:00 [info] <0.230.0> Running boot step database defined by app rabbit
+2023-05-19 15:17:33.606208+00:00 [info] <0.230.0> Node database directory at /var/lib/rabbitmq/mnesia/rabbit@rmq0.local is empty. Assuming we need to join an existing cluster or initialise from scratch...
+2023-05-19 15:17:33.606288+00:00 [info] <0.230.0> Configured peer discovery backend: rabbit_peer_discovery_classic_config
+2023-05-19 15:17:33.606404+00:00 [info] <0.230.0> Will try to lock with peer discovery backend rabbit_peer_discovery_classic_config
+2023-05-19 15:17:33.616662+00:00 [info] <0.230.0> All discovered existing cluster peers: rabbit@rmq0.local, rabbit@rmq1.local, rabbit@rmq2.local
+2023-05-19 15:17:33.616730+00:00 [info] <0.230.0> Peer nodes we can cluster with: rabbit@rmq1.local, rabbit@rmq2.local
+2023-05-19 15:17:33.623142+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:33.623698+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:33.623782+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 9 retries left...
+2023-05-19 15:17:34.126840+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:34.128927+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:34.129313+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 8 retries left...
+2023-05-19 15:17:34.631761+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:34.634106+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:34.634610+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 7 retries left...
+2023-05-19 15:17:35.137777+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:35.139853+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:35.140260+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 6 retries left...
+2023-05-19 15:17:35.642550+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:35.644957+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:35.645272+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 5 retries left...
+2023-05-19 15:17:36.147741+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:36.149885+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:36.150237+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 4 retries left...
+2023-05-19 15:17:36.652888+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:36.655340+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:36.655716+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 3 retries left...
+2023-05-19 15:17:37.158691+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:37.160818+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:37.161182+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 2 retries left...
+2023-05-19 15:17:37.663677+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:37.665473+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:37.665867+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 1 retries left...
+2023-05-19 15:17:38.168613+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq1.local: {error,tables_not_present}
+2023-05-19 15:17:38.170534+00:00 [warning] <0.230.0> Could not auto-cluster with node rabbit@rmq2.local: {error,tables_not_present}
+2023-05-19 15:17:38.171029+00:00 [info] <0.230.0> Trying to join discovered peers failed. Will retry after a delay of 500 ms, 0 retries left...
+2023-05-19 15:17:38.671904+00:00 [info] <0.230.0> Could not successfully contact any node of: rabbit@rmq1.local,rabbit@rmq2.local (as in Erlang distribution). Starting as a blank standalone node...
+2023-05-19 15:17:38.677859+00:00 [notice] <0.44.0> Application mnesia exited with reason: stopped
+2023-05-19 15:17:38.753291+00:00 [info] <0.230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-05-19 15:17:38.753458+00:00 [info] <0.230.0> Successfully synced tables from a peer
+2023-05-19 15:17:38.762698+00:00 [info] <0.230.0> Feature flags: `feature_flags_v2`: supported, attempt to enable...
+2023-05-19 15:17:38.798455+00:00 [notice] <0.292.0> Feature flags: attempt to enable `classic_mirrored_queue_version`...
+2023-05-19 15:17:38.821163+00:00 [notice] <0.292.0> Feature flags: `classic_mirrored_queue_version` enabled
+2023-05-19 15:17:38.824097+00:00 [notice] <0.292.0> Feature flags: attempt to enable `classic_queue_type_delivery_support`...
+2023-05-19 15:17:38.838491+00:00 [notice] <0.292.0> Feature flags: attempt to enable `stream_queue`...
+2023-05-19 15:17:38.860791+00:00 [notice] <0.292.0> Feature flags: `stream_queue` enabled
+2023-05-19 15:17:38.871316+00:00 [notice] <0.292.0> Feature flags: `classic_queue_type_delivery_support` enabled
+2023-05-19 15:17:38.874084+00:00 [notice] <0.292.0> Feature flags: attempt to enable `direct_exchange_routing_v2`...
+2023-05-19 15:17:38.886961+00:00 [info] <0.513.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-05-19 15:17:38.887093+00:00 [info] <0.513.0> Successfully synced tables from a peer
+2023-05-19 15:17:38.901378+00:00 [notice] <0.292.0> Feature flags: `direct_exchange_routing_v2` enabled
+2023-05-19 15:17:38.904035+00:00 [notice] <0.292.0> Feature flags: attempt to enable `drop_unroutable_metric`...
+2023-05-19 15:17:38.929709+00:00 [notice] <0.292.0> Feature flags: `drop_unroutable_metric` enabled
+2023-05-19 15:17:38.932444+00:00 [notice] <0.292.0> Feature flags: attempt to enable `empty_basic_get_metric`...
+2023-05-19 15:17:38.957824+00:00 [notice] <0.292.0> Feature flags: `empty_basic_get_metric` enabled
+2023-05-19 15:17:38.962865+00:00 [notice] <0.292.0> Feature flags: attempt to enable `listener_records_in_ets`...
+2023-05-19 15:17:38.996120+00:00 [notice] <0.292.0> Feature flags: `listener_records_in_ets` enabled
+2023-05-19 15:17:39.007247+00:00 [notice] <0.292.0> Feature flags: attempt to enable `stream_sac_coordinator_unblock_group`...
+2023-05-19 15:17:39.020941+00:00 [notice] <0.292.0> Feature flags: attempt to enable `stream_single_active_consumer`...
+2023-05-19 15:17:39.042113+00:00 [notice] <0.292.0> Feature flags: `stream_single_active_consumer` enabled
+2023-05-19 15:17:39.052660+00:00 [notice] <0.292.0> Feature flags: `stream_sac_coordinator_unblock_group` enabled
+2023-05-19 15:17:39.058369+00:00 [notice] <0.292.0> Feature flags: attempt to enable `tracking_records_in_ets`...
+2023-05-19 15:17:39.083245+00:00 [notice] <0.292.0> Feature flags: `tracking_records_in_ets` enabled
+2023-05-19 15:17:39.090023+00:00 [info] <0.230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-05-19 15:17:39.090116+00:00 [info] <0.230.0> Successfully synced tables from a peer
+2023-05-19 15:17:39.099389+00:00 [info] <0.230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-05-19 15:17:39.099541+00:00 [info] <0.230.0> Successfully synced tables from a peer
+2023-05-19 15:17:39.099612+00:00 [info] <0.230.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2023-05-19 15:17:39.099665+00:00 [info] <0.230.0> Will try to unlock with peer discovery backend rabbit_peer_discovery_classic_config
+2023-05-19 15:17:39.100046+00:00 [info] <0.230.0> Running boot step tracking_metadata_store defined by app rabbit
+2023-05-19 15:17:39.100211+00:00 [info] <0.646.0> Setting up a table for connection tracking on this node: tracked_connection
+2023-05-19 15:17:39.100281+00:00 [info] <0.646.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost
+2023-05-19 15:17:39.100396+00:00 [info] <0.646.0> Setting up a table for per-user connection counting on this node: tracked_connection_per_user
+2023-05-19 15:17:39.100507+00:00 [info] <0.646.0> Setting up a table for channel tracking on this node: tracked_channel
+2023-05-19 15:17:39.100605+00:00 [info] <0.646.0> Setting up a table for channel tracking on this node: tracked_channel_per_user
+2023-05-19 15:17:39.100755+00:00 [info] <0.230.0> Running boot step networking_metadata_store defined by app rabbit
+2023-05-19 15:17:39.100958+00:00 [info] <0.230.0> Running boot step database_sync defined by app rabbit
+2023-05-19 15:17:39.101132+00:00 [info] <0.230.0> Running boot step feature_flags defined by app rabbit
+2023-05-19 15:17:39.101322+00:00 [info] <0.230.0> Running boot step codec_correctness_check defined by app rabbit
+2023-05-19 15:17:39.101455+00:00 [info] <0.230.0> Running boot step external_infrastructure defined by app rabbit
+2023-05-19 15:17:39.101519+00:00 [info] <0.230.0> Running boot step rabbit_event defined by app rabbit
+2023-05-19 15:17:39.101721+00:00 [info] <0.230.0> Running boot step rabbit_registry defined by app rabbit
+2023-05-19 15:17:39.101941+00:00 [info] <0.230.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2023-05-19 15:17:39.102133+00:00 [info] <0.230.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2023-05-19 15:17:39.102307+00:00 [info] <0.230.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2023-05-19 15:17:39.102508+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2023-05-19 15:17:39.102706+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2023-05-19 15:17:39.102874+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2023-05-19 15:17:39.103039+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2023-05-19 15:17:39.103225+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2023-05-19 15:17:39.103405+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2023-05-19 15:17:39.103567+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2023-05-19 15:17:39.103770+00:00 [info] <0.230.0> Running boot step rabbit_priority_queue defined by app rabbit
+2023-05-19 15:17:39.103863+00:00 [info] <0.230.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2023-05-19 15:17:39.103992+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2023-05-19 15:17:39.104171+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2023-05-19 15:17:39.104373+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2023-05-19 15:17:39.104567+00:00 [info] <0.230.0> Running boot step kernel_ready defined by app rabbit
+2023-05-19 15:17:39.104631+00:00 [info] <0.230.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2023-05-19 15:17:39.104862+00:00 [info] <0.230.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2023-05-19 15:17:39.105416+00:00 [info] <0.655.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2023-05-19 15:17:39.105567+00:00 [info] <0.230.0> Running boot step guid_generator defined by app rabbit
+2023-05-19 15:17:39.107761+00:00 [info] <0.230.0> Running boot step rabbit_node_monitor defined by app rabbit
+2023-05-19 15:17:39.107954+00:00 [info] <0.659.0> Starting rabbit_node_monitor
+2023-05-19 15:17:39.108100+00:00 [info] <0.230.0> Running boot step delegate_sup defined by app rabbit
+2023-05-19 15:17:39.108625+00:00 [info] <0.230.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2023-05-19 15:17:39.108901+00:00 [info] <0.230.0> Running boot step rabbit_fifo_dlx_sup defined by app rabbit
+2023-05-19 15:17:39.109050+00:00 [info] <0.230.0> Running boot step core_initialized defined by app rabbit
+2023-05-19 15:17:39.109102+00:00 [info] <0.230.0> Running boot step upgrade_queues defined by app rabbit
+2023-05-19 15:17:39.115636+00:00 [info] <0.230.0> message_store upgrades: 1 to apply
+2023-05-19 15:17:39.115735+00:00 [info] <0.230.0> message_store upgrades: Applying rabbit_variable_queue:move_messages_to_vhost_store
+2023-05-19 15:17:39.115924+00:00 [info] <0.230.0> message_store upgrades: No durable queues found. Skipping message store migration
+2023-05-19 15:17:39.115981+00:00 [info] <0.230.0> message_store upgrades: Removing the old message store data
+2023-05-19 15:17:39.116324+00:00 [info] <0.230.0> message_store upgrades: All upgrades applied successfully
+2023-05-19 15:17:39.123425+00:00 [info] <0.230.0> Running boot step channel_tracking defined by app rabbit
+2023-05-19 15:17:39.123500+00:00 [info] <0.230.0> Running boot step rabbit_channel_tracking_handler defined by app rabbit
+2023-05-19 15:17:39.123613+00:00 [info] <0.230.0> Running boot step connection_tracking defined by app rabbit
+2023-05-19 15:17:39.123737+00:00 [info] <0.230.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2023-05-19 15:17:39.123915+00:00 [info] <0.230.0> Running boot step rabbit_definitions_hashing defined by app rabbit
+2023-05-19 15:17:39.124074+00:00 [info] <0.230.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2023-05-19 15:17:39.124264+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2023-05-19 15:17:39.125966+00:00 [info] <0.230.0> Running boot step rabbit_policies defined by app rabbit
+2023-05-19 15:17:39.126397+00:00 [info] <0.230.0> Running boot step rabbit_policy defined by app rabbit
+2023-05-19 15:17:39.126538+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2023-05-19 15:17:39.126730+00:00 [info] <0.230.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2023-05-19 15:17:39.126867+00:00 [info] <0.230.0> Running boot step rabbit_stream_coordinator defined by app rabbit
+2023-05-19 15:17:39.127058+00:00 [info] <0.230.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2023-05-19 15:17:39.127201+00:00 [info] <0.230.0> Running boot step rabbit_federation_parameters defined by app rabbitmq_federation
+2023-05-19 15:17:39.127413+00:00 [info] <0.230.0> Running boot step rabbit_federation_supervisor defined by app rabbitmq_federation
+2023-05-19 15:17:39.129446+00:00 [info] <0.230.0> Running boot step rabbit_federation_queue defined by app rabbitmq_federation
+2023-05-19 15:17:39.129656+00:00 [info] <0.230.0> Running boot step rabbit_federation_upstream_exchange defined by app rabbitmq_federation
+2023-05-19 15:17:39.129875+00:00 [info] <0.230.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2023-05-19 15:17:39.130121+00:00 [info] <0.230.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2023-05-19 15:17:39.130245+00:00 [info] <0.230.0> Management plugin: using rates mode 'basic'
+2023-05-19 15:17:39.130563+00:00 [info] <0.230.0> Running boot step recovery defined by app rabbit
+2023-05-19 15:17:39.136495+00:00 [info] <0.230.0> Running boot step empty_db_check defined by app rabbit
+2023-05-19 15:17:39.136636+00:00 [info] <0.230.0> Will seed default virtual host and user...
+2023-05-19 15:17:39.136822+00:00 [info] <0.230.0> Adding vhost '/' (description: 'Default virtual host', tags: [])
+2023-05-19 15:17:39.155033+00:00 [info] <0.713.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2023-05-19 15:17:39.155678+00:00 [info] <0.713.0> Setting segment_entry_count for vhost '/' with 0 queues to '2048'
+2023-05-19 15:17:39.158307+00:00 [info] <0.713.0> Starting message stores for vhost '/'
+2023-05-19 15:17:39.158489+00:00 [info] <0.717.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2023-05-19 15:17:39.159490+00:00 [info] <0.713.0> Started message store of type transient for vhost '/'
+2023-05-19 15:17:39.159636+00:00 [info] <0.721.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2023-05-19 15:17:39.160068+00:00 [warning] <0.721.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2023-05-19 15:17:39.160867+00:00 [info] <0.713.0> Started message store of type persistent for vhost '/'
+2023-05-19 15:17:39.161006+00:00 [info] <0.713.0> Recovering 0 queues of type rabbit_classic_queue took 5ms
+2023-05-19 15:17:39.161091+00:00 [info] <0.713.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms
+2023-05-19 15:17:39.161156+00:00 [info] <0.713.0> Recovering 0 queues of type rabbit_stream_queue took 0ms
+2023-05-19 15:17:39.164280+00:00 [info] <0.230.0> Created user 'guest'
+2023-05-19 15:17:39.166292+00:00 [info] <0.230.0> Successfully set user tags for user 'guest' to [administrator]
+2023-05-19 15:17:39.168484+00:00 [info] <0.230.0> Successfully set permissions for 'guest' in virtual host '/' to '.*', '.*', '.*'
+2023-05-19 15:17:39.168602+00:00 [info] <0.230.0> Running boot step rabbit_observer_cli defined by app rabbit
+2023-05-19 15:17:39.168727+00:00 [info] <0.230.0> Running boot step rabbit_looking_glass defined by app rabbit
+2023-05-19 15:17:39.168857+00:00 [info] <0.230.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2023-05-19 15:17:39.169072+00:00 [info] <0.230.0> Running boot step background_gc defined by app rabbit
+2023-05-19 15:17:39.169302+00:00 [info] <0.230.0> Running boot step routing_ready defined by app rabbit
+2023-05-19 15:17:39.169353+00:00 [info] <0.230.0> Running boot step pre_flight defined by app rabbit
+2023-05-19 15:17:39.169413+00:00 [info] <0.230.0> Running boot step notify_cluster defined by app rabbit
+2023-05-19 15:17:39.169554+00:00 [info] <0.230.0> Running boot step networking defined by app rabbit
+2023-05-19 15:17:39.169738+00:00 [info] <0.230.0> Running boot step definition_import_worker_pool defined by app rabbit
+2023-05-19 15:17:39.169856+00:00 [info] <0.291.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2023-05-19 15:17:39.170340+00:00 [info] <0.230.0> Running boot step cluster_name defined by app rabbit
+2023-05-19 15:17:39.170442+00:00 [info] <0.230.0> Initialising internal cluster ID to 'rabbitmq-cluster-id-kbltfnklAB8rt-XhbedQ8Q'
+2023-05-19 15:17:39.172481+00:00 [info] <0.230.0> Running boot step direct_client defined by app rabbit
+2023-05-19 15:17:39.172617+00:00 [info] <0.230.0> Running boot step rabbit_federation_exchange defined by app rabbitmq_federation
+2023-05-19 15:17:39.172871+00:00 [info] <0.230.0> Running boot step rabbit_maintenance_mode_state defined by app rabbit
+2023-05-19 15:17:39.172961+00:00 [info] <0.230.0> Creating table rabbit_node_maintenance_states for maintenance mode status
+2023-05-19 15:17:39.176145+00:00 [info] <0.230.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2023-05-19 15:17:39.176552+00:00 [info] <0.762.0> Resetting node maintenance status
+2023-05-19 15:17:39.185888+00:00 [info] <0.821.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2023-05-19 15:17:39.185999+00:00 [info] <0.849.0> Statistics database started.
+2023-05-19 15:17:39.186083+00:00 [info] <0.848.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2023-05-19 15:17:39.191233+00:00 [info] <0.864.0> Peer discovery: node cleanup is disabled
+2023-05-19 15:17:39.196262+00:00 [info] <0.878.0> Prometheus metrics: HTTP (non-TLS) listener started on port 15692
+2023-05-19 15:17:39.196383+00:00 [info] <0.762.0> Ready to start client connection listeners
+2023-05-19 15:17:39.197598+00:00 [info] <0.922.0> started TCP listener on [::]:5672
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0> Server startup complete; 8 plugins started.
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_prometheus
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_federation_management
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_federation
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_top
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_peer_discovery_common
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_management
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_web_dispatch
+2023-05-19 15:17:39.297387+00:00 [info] <0.762.0>  * rabbitmq_management_agent
+2023-05-19 15:17:41.000971+00:00 [info] <0.659.0> rabbit on node 'rabbit@rmq2.local' up
+2023-05-19 15:17:42.747580+00:00 [info] <0.659.0> rabbit on node 'rabbit@rmq1.local' up
+2023-05-19 15:17:46.869165+00:00 [info] <0.1374.0> accepting AMQP connection <0.1374.0> (172.18.0.5:34568 -> 172.18.0.4:5672)
+2023-05-19 15:17:46.901620+00:00 [info] <0.1374.0> connection <0.1374.0> (172.18.0.5:34568 -> 172.18.0.4:5672) has a client-provided name: perf-test-test
+2023-05-19 15:17:46.906371+00:00 [info] <0.1374.0> connection <0.1374.0> (172.18.0.5:34568 -> 172.18.0.4:5672 - perf-test-test): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:46.908455+00:00 [info] <0.1374.0> closing AMQP connection <0.1374.0> (172.18.0.5:34568 -> 172.18.0.4:5672 - perf-test-test, vhost: '/', user: 'guest')
+2023-05-19 15:17:46.910606+00:00 [info] <0.1384.0> accepting AMQP connection <0.1384.0> (172.18.0.5:34584 -> 172.18.0.4:5672)
+2023-05-19 15:17:46.911845+00:00 [info] <0.1384.0> connection <0.1384.0> (172.18.0.5:34584 -> 172.18.0.4:5672) has a client-provided name: perf-test-configuration-0
+2023-05-19 15:17:46.912731+00:00 [info] <0.1384.0> connection <0.1384.0> (172.18.0.5:34584 -> 172.18.0.4:5672 - perf-test-configuration-0): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:46.974751+00:00 [notice] <0.1401.0> queue ''perf-test-000'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:46.975696+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-000' with 3 servers
+2023-05-19 15:17:46.975696+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:46.975696+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-000\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.048379+00:00 [notice] <0.1415.0> queue ''perf-test-001'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.049159+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-001' with 3 servers
+2023-05-19 15:17:47.049159+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.049159+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-001\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.118873+00:00 [notice] <0.1429.0> queue ''perf-test-002'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.119613+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-002' with 3 servers
+2023-05-19 15:17:47.119613+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.119613+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-002\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.190739+00:00 [notice] <0.1443.0> queue ''perf-test-003'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.191396+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-003' with 3 servers
+2023-05-19 15:17:47.191396+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.191396+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-003\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.270313+00:00 [notice] <0.1457.0> queue ''perf-test-004'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.271045+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-004' with 3 servers
+2023-05-19 15:17:47.271045+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.271045+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-004\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.340829+00:00 [notice] <0.1471.0> queue ''perf-test-005'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.342591+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-005' with 3 servers
+2023-05-19 15:17:47.342591+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.342591+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-005\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.419711+00:00 [notice] <0.1485.0> queue ''perf-test-006'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.421078+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-006' with 3 servers
+2023-05-19 15:17:47.421078+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.421078+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-006\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.497510+00:00 [notice] <0.1499.0> queue ''perf-test-007'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.498323+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-007' with 3 servers
+2023-05-19 15:17:47.498323+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.498323+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-007\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.576695+00:00 [notice] <0.1513.0> queue ''perf-test-008'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.577580+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-008' with 3 servers
+2023-05-19 15:17:47.577580+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.577580+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-008\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.644473+00:00 [notice] <0.1527.0> queue ''perf-test-009'' in vhost '/': candidate -> leader in term: 1 machine version: 3
+2023-05-19 15:17:47.645216+00:00 [info] <0.1393.0> ra: started cluster %2F_'perf-test-009' with 3 servers
+2023-05-19 15:17:47.645216+00:00 [info] <0.1393.0> 0 servers failed to start: []
+2023-05-19 15:17:47.645216+00:00 [info] <0.1393.0> Leader: {'%2F_\'perf-test-009\'','rabbit@rmq0.local'}
+2023-05-19 15:17:47.679247+00:00 [info] <0.1540.0> accepting AMQP connection <0.1540.0> (172.18.0.5:34592 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.683532+00:00 [info] <0.1540.0> connection <0.1540.0> (172.18.0.5:34592 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-0
+2023-05-19 15:17:47.687673+00:00 [info] <0.1540.0> connection <0.1540.0> (172.18.0.5:34592 -> 172.18.0.4:5672 - perf-test-consumer-0): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.712110+00:00 [info] <0.1553.0> accepting AMQP connection <0.1553.0> (172.18.0.5:34598 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.716709+00:00 [info] <0.1553.0> connection <0.1553.0> (172.18.0.5:34598 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-1
+2023-05-19 15:17:47.720630+00:00 [info] <0.1553.0> connection <0.1553.0> (172.18.0.5:34598 -> 172.18.0.4:5672 - perf-test-consumer-1): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.725683+00:00 [info] <0.1566.0> accepting AMQP connection <0.1566.0> (172.18.0.5:34600 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.729865+00:00 [info] <0.1566.0> connection <0.1566.0> (172.18.0.5:34600 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-2
+2023-05-19 15:17:47.733707+00:00 [info] <0.1566.0> connection <0.1566.0> (172.18.0.5:34600 -> 172.18.0.4:5672 - perf-test-consumer-2): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.739558+00:00 [info] <0.1579.0> accepting AMQP connection <0.1579.0> (172.18.0.5:34602 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.743578+00:00 [info] <0.1579.0> connection <0.1579.0> (172.18.0.5:34602 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-3
+2023-05-19 15:17:47.747582+00:00 [info] <0.1579.0> connection <0.1579.0> (172.18.0.5:34602 -> 172.18.0.4:5672 - perf-test-consumer-3): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.752477+00:00 [info] <0.1592.0> accepting AMQP connection <0.1592.0> (172.18.0.5:34606 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.757000+00:00 [info] <0.1592.0> connection <0.1592.0> (172.18.0.5:34606 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-4
+2023-05-19 15:17:47.761010+00:00 [info] <0.1592.0> connection <0.1592.0> (172.18.0.5:34606 -> 172.18.0.4:5672 - perf-test-consumer-4): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.766104+00:00 [info] <0.1605.0> accepting AMQP connection <0.1605.0> (172.18.0.5:34616 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.772030+00:00 [info] <0.1605.0> connection <0.1605.0> (172.18.0.5:34616 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-5
+2023-05-19 15:17:47.774831+00:00 [info] <0.1605.0> connection <0.1605.0> (172.18.0.5:34616 -> 172.18.0.4:5672 - perf-test-consumer-5): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.777585+00:00 [info] <0.1618.0> accepting AMQP connection <0.1618.0> (172.18.0.5:34626 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.779919+00:00 [info] <0.1618.0> connection <0.1618.0> (172.18.0.5:34626 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-6
+2023-05-19 15:17:47.782253+00:00 [info] <0.1618.0> connection <0.1618.0> (172.18.0.5:34626 -> 172.18.0.4:5672 - perf-test-consumer-6): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.784596+00:00 [info] <0.1631.0> accepting AMQP connection <0.1631.0> (172.18.0.5:34642 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.786722+00:00 [info] <0.1631.0> connection <0.1631.0> (172.18.0.5:34642 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-7
+2023-05-19 15:17:47.788449+00:00 [info] <0.1631.0> connection <0.1631.0> (172.18.0.5:34642 -> 172.18.0.4:5672 - perf-test-consumer-7): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.790368+00:00 [info] <0.1644.0> accepting AMQP connection <0.1644.0> (172.18.0.5:34656 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.791919+00:00 [info] <0.1644.0> connection <0.1644.0> (172.18.0.5:34656 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-8
+2023-05-19 15:17:47.793428+00:00 [info] <0.1644.0> connection <0.1644.0> (172.18.0.5:34656 -> 172.18.0.4:5672 - perf-test-consumer-8): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.842347+00:00 [info] <0.1657.0> accepting AMQP connection <0.1657.0> (172.18.0.5:34660 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.844576+00:00 [info] <0.1657.0> connection <0.1657.0> (172.18.0.5:34660 -> 172.18.0.4:5672) has a client-provided name: perf-test-consumer-9
+2023-05-19 15:17:47.847010+00:00 [info] <0.1657.0> connection <0.1657.0> (172.18.0.5:34660 -> 172.18.0.4:5672 - perf-test-consumer-9): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.851618+00:00 [info] <0.1670.0> accepting AMQP connection <0.1670.0> (172.18.0.5:34674 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.854299+00:00 [info] <0.1670.0> connection <0.1670.0> (172.18.0.5:34674 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-0
+2023-05-19 15:17:47.856890+00:00 [info] <0.1670.0> connection <0.1670.0> (172.18.0.5:34674 -> 172.18.0.4:5672 - perf-test-producer-0): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.881563+00:00 [info] <0.1683.0> accepting AMQP connection <0.1683.0> (172.18.0.5:34690 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.885298+00:00 [info] <0.1683.0> connection <0.1683.0> (172.18.0.5:34690 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-1
+2023-05-19 15:17:47.888920+00:00 [info] <0.1683.0> connection <0.1683.0> (172.18.0.5:34690 -> 172.18.0.4:5672 - perf-test-producer-1): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.895344+00:00 [info] <0.1696.0> accepting AMQP connection <0.1696.0> (172.18.0.5:34704 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.899091+00:00 [info] <0.1696.0> connection <0.1696.0> (172.18.0.5:34704 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-2
+2023-05-19 15:17:47.902524+00:00 [info] <0.1696.0> connection <0.1696.0> (172.18.0.5:34704 -> 172.18.0.4:5672 - perf-test-producer-2): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.908891+00:00 [info] <0.1709.0> accepting AMQP connection <0.1709.0> (172.18.0.5:34712 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.912322+00:00 [info] <0.1709.0> connection <0.1709.0> (172.18.0.5:34712 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-3
+2023-05-19 15:17:47.915622+00:00 [info] <0.1709.0> connection <0.1709.0> (172.18.0.5:34712 -> 172.18.0.4:5672 - perf-test-producer-3): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.921744+00:00 [info] <0.1722.0> accepting AMQP connection <0.1722.0> (172.18.0.5:34714 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.925230+00:00 [info] <0.1722.0> connection <0.1722.0> (172.18.0.5:34714 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-4
+2023-05-19 15:17:47.929007+00:00 [info] <0.1722.0> connection <0.1722.0> (172.18.0.5:34714 -> 172.18.0.4:5672 - perf-test-producer-4): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.935722+00:00 [info] <0.1735.0> accepting AMQP connection <0.1735.0> (172.18.0.5:58916 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.938854+00:00 [info] <0.1735.0> connection <0.1735.0> (172.18.0.5:58916 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-5
+2023-05-19 15:17:47.942063+00:00 [info] <0.1735.0> connection <0.1735.0> (172.18.0.5:58916 -> 172.18.0.4:5672 - perf-test-producer-5): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.948425+00:00 [info] <0.1748.0> accepting AMQP connection <0.1748.0> (172.18.0.5:58924 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.952073+00:00 [info] <0.1748.0> connection <0.1748.0> (172.18.0.5:58924 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-6
+2023-05-19 15:17:47.955321+00:00 [info] <0.1748.0> connection <0.1748.0> (172.18.0.5:58924 -> 172.18.0.4:5672 - perf-test-producer-6): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.961651+00:00 [info] <0.1761.0> accepting AMQP connection <0.1761.0> (172.18.0.5:58928 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.965387+00:00 [info] <0.1761.0> connection <0.1761.0> (172.18.0.5:58928 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-7
+2023-05-19 15:17:47.969178+00:00 [info] <0.1761.0> connection <0.1761.0> (172.18.0.5:58928 -> 172.18.0.4:5672 - perf-test-producer-7): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.974993+00:00 [info] <0.1774.0> accepting AMQP connection <0.1774.0> (172.18.0.5:58940 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.978574+00:00 [info] <0.1774.0> connection <0.1774.0> (172.18.0.5:58940 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-8
+2023-05-19 15:17:47.981697+00:00 [info] <0.1774.0> connection <0.1774.0> (172.18.0.5:58940 -> 172.18.0.4:5672 - perf-test-producer-8): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:17:47.988183+00:00 [info] <0.1787.0> accepting AMQP connection <0.1787.0> (172.18.0.5:58946 -> 172.18.0.4:5672)
+2023-05-19 15:17:47.991936+00:00 [info] <0.1787.0> connection <0.1787.0> (172.18.0.5:58946 -> 172.18.0.4:5672) has a client-provided name: perf-test-producer-9
+2023-05-19 15:17:47.994570+00:00 [info] <0.1787.0> connection <0.1787.0> (172.18.0.5:58946 -> 172.18.0.4:5672 - perf-test-producer-9): user 'guest' authenticated and granted access to vhost '/'
+2023-05-19 15:19:24.296964+00:00 [error] <0.323.0> ** Node 'rabbit@rmq1.local' not responding **
+2023-05-19 15:19:24.296964+00:00 [error] <0.323.0> ** Removing (timedout) connection **
+2023-05-19 15:19:24.296964+00:00 [error] <0.323.0> 
+2023-05-19 15:19:24.297039+00:00 [error] <0.321.0> ** Node 'rabbit@rmq2.local' not responding **
+2023-05-19 15:19:24.297039+00:00 [error] <0.321.0> ** Removing (timedout) connection **
+2023-05-19 15:19:24.297039+00:00 [error] <0.321.0> 
+2023-05-19 15:19:24.297640+00:00 [info] <0.659.0> rabbit on node 'rabbit@rmq1.local' down
+2023-05-19 15:19:24.311506+00:00 [info] <0.659.0> node 'rabbit@rmq1.local' down: net_tick_timeout
+2023-05-19 15:19:24.312042+00:00 [warning] <0.659.0> Cluster minority/secondary status detected - awaiting recovery
+2023-05-19 15:19:24.312445+00:00 [info] <0.659.0> rabbit on node 'rabbit@rmq2.local' down
+2023-05-19 15:19:24.312640+00:00 [info] <0.2044.0> RabbitMQ is asked to stop...
+2023-05-19 15:19:24.322372+00:00 [info] <0.659.0> node 'rabbit@rmq2.local' down: net_tick_timeout
+2023-05-19 15:19:24.322821+00:00 [warning] <0.659.0> Cluster minority/secondary status detected - awaiting recovery
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0> Stopping RabbitMQ applications and their dependencies in the following order:
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_federation_management
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_top
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_management
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_prometheus
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_web_dispatch
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     cowboy
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     cowlib
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_management_agent
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_federation
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_peer_discovery_common
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbit
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbitmq_prelaunch
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     amqp_client
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     rabbit_common
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     prometheus
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     ra
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     accept
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     os_mon
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     sysmon_handler
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     osiris
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0>     mnesia
+2023-05-19 15:19:24.456210+00:00 [info] <0.2044.0> 
+2023-05-19 15:19:24.456420+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_federation_management'
+2023-05-19 15:19:24.456478+00:00 [notice] <0.44.0> Application rabbitmq_federation_management exited with reason: stopped
+2023-05-19 15:19:24.456557+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_top'
+2023-05-19 15:19:24.457596+00:00 [notice] <0.44.0> Application rabbitmq_top exited with reason: stopped
+2023-05-19 15:19:24.457661+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_management'
+2023-05-19 15:19:25.462436+00:00 [warning] <0.813.0> HTTP listener registry could not find context rabbitmq_management_tls
+2023-05-19 15:19:25.466636+00:00 [notice] <0.44.0> Application rabbitmq_management exited with reason: stopped
+2023-05-19 15:19:25.467007+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_prometheus'
+2023-05-19 15:19:25.471900+00:00 [warning] <0.813.0> HTTP listener registry could not find context rabbitmq_prometheus_tls
+2023-05-19 15:19:25.475931+00:00 [notice] <0.44.0> Application rabbitmq_prometheus exited with reason: stopped
+2023-05-19 15:19:25.476229+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_web_dispatch'
+2023-05-19 15:19:25.478233+00:00 [notice] <0.44.0> Application rabbitmq_web_dispatch exited with reason: stopped
+2023-05-19 15:19:25.478307+00:00 [info] <0.2044.0> Stopping application 'cowboy'
+2023-05-19 15:19:25.479261+00:00 [notice] <0.44.0> Application cowboy exited with reason: stopped
+2023-05-19 15:19:25.479337+00:00 [info] <0.2044.0> Stopping application 'cowlib'
+2023-05-19 15:19:25.479406+00:00 [notice] <0.44.0> Application cowlib exited with reason: stopped
+2023-05-19 15:19:25.479498+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_management_agent'
+2023-05-19 15:19:25.481087+00:00 [notice] <0.44.0> Application rabbitmq_management_agent exited with reason: stopped
+2023-05-19 15:19:25.481177+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_federation'
+2023-05-19 15:19:25.482158+00:00 [notice] <0.44.0> Application rabbitmq_federation exited with reason: stopped
+2023-05-19 15:19:25.482228+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_peer_discovery_common'
+2023-05-19 15:19:25.483134+00:00 [notice] <0.44.0> Application rabbitmq_peer_discovery_common exited with reason: stopped
+2023-05-19 15:19:25.483204+00:00 [info] <0.2044.0> Stopping application 'rabbit'
+2023-05-19 15:19:25.483343+00:00 [info] <0.230.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping unregistration.
+2023-05-19 15:19:25.483486+00:00 [info] <0.922.0> stopped TCP listener on [::]:5672
+2023-05-19 15:19:25.484240+00:00 [error] <0.1592.0> Error on AMQP connection <0.1592.0> (172.18.0.5:34606 -> 172.18.0.4:5672 - perf-test-consumer-4, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484240+00:00 [error] <0.1592.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484240+00:00 [error] <0.1618.0> Error on AMQP connection <0.1618.0> (172.18.0.5:34626 -> 172.18.0.4:5672 - perf-test-consumer-6, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484240+00:00 [error] <0.1618.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484252+00:00 [error] <0.1696.0> Error on AMQP connection <0.1696.0> (172.18.0.5:34704 -> 172.18.0.4:5672 - perf-test-producer-2, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484252+00:00 [error] <0.1696.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484246+00:00 [error] <0.1787.0> Error on AMQP connection <0.1787.0> (172.18.0.5:58946 -> 172.18.0.4:5672 - perf-test-producer-9, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484246+00:00 [error] <0.1787.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484240+00:00 [error] <0.1553.0> Error on AMQP connection <0.1553.0> (172.18.0.5:34598 -> 172.18.0.4:5672 - perf-test-consumer-1, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484240+00:00 [error] <0.1553.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484481+00:00 [warning] <0.1796.0> Channel is stopping with 1 pending publisher confirms
+2023-05-19 15:19:25.484333+00:00 [error] <0.1709.0> Error on AMQP connection <0.1709.0> (172.18.0.5:34712 -> 172.18.0.4:5672 - perf-test-producer-3, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484333+00:00 [error] <0.1709.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484439+00:00 [error] <0.1579.0> Error on AMQP connection <0.1579.0> (172.18.0.5:34602 -> 172.18.0.4:5672 - perf-test-consumer-3, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484439+00:00 [error] <0.1579.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484240+00:00 [error] <0.1605.0> Error on AMQP connection <0.1605.0> (172.18.0.5:34616 -> 172.18.0.4:5672 - perf-test-consumer-5, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484240+00:00 [error] <0.1605.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484464+00:00 [error] <0.1761.0> Error on AMQP connection <0.1761.0> (172.18.0.5:58928 -> 172.18.0.4:5672 - perf-test-producer-7, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484464+00:00 [error] <0.1761.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484252+00:00 [error] <0.1631.0> Error on AMQP connection <0.1631.0> (172.18.0.5:34642 -> 172.18.0.4:5672 - perf-test-consumer-7, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484252+00:00 [error] <0.1631.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484363+00:00 [error] <0.1735.0> Error on AMQP connection <0.1735.0> (172.18.0.5:58916 -> 172.18.0.4:5672 - perf-test-producer-5, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484363+00:00 [error] <0.1735.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484483+00:00 [error] <0.1566.0> Error on AMQP connection <0.1566.0> (172.18.0.5:34600 -> 172.18.0.4:5672 - perf-test-consumer-2, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484483+00:00 [error] <0.1566.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484646+00:00 [error] <0.1722.0> Error on AMQP connection <0.1722.0> (172.18.0.5:34714 -> 172.18.0.4:5672 - perf-test-producer-4, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484646+00:00 [error] <0.1722.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484437+00:00 [error] <0.1540.0> Error on AMQP connection <0.1540.0> (172.18.0.5:34592 -> 172.18.0.4:5672 - perf-test-consumer-0, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484437+00:00 [error] <0.1540.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484518+00:00 [error] <0.1683.0> Error on AMQP connection <0.1683.0> (172.18.0.5:34690 -> 172.18.0.4:5672 - perf-test-producer-1, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484518+00:00 [error] <0.1683.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484384+00:00 [error] <0.1670.0> Error on AMQP connection <0.1670.0> (172.18.0.5:34674 -> 172.18.0.4:5672 - perf-test-producer-0, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484384+00:00 [error] <0.1670.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484818+00:00 [error] <0.1748.0> Error on AMQP connection <0.1748.0> (172.18.0.5:58924 -> 172.18.0.4:5672 - perf-test-producer-6, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484818+00:00 [error] <0.1748.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484858+00:00 [warning] <0.1705.0> Channel is stopping with 1 pending publisher confirms
+2023-05-19 15:19:25.484804+00:00 [error] <0.1644.0> Error on AMQP connection <0.1644.0> (172.18.0.5:34656 -> 172.18.0.4:5672 - perf-test-consumer-8, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484804+00:00 [error] <0.1644.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.484923+00:00 [error] <0.1657.0> Error on AMQP connection <0.1657.0> (172.18.0.5:34660 -> 172.18.0.4:5672 - perf-test-consumer-9, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484923+00:00 [error] <0.1657.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.485044+00:00 [warning] <0.1744.0> Channel is stopping with 1 pending publisher confirms
+2023-05-19 15:19:25.485097+00:00 [warning] <0.1718.0> Channel is stopping with 1 pending publisher confirms
+2023-05-19 15:19:25.485308+00:00 [warning] <0.1679.0> Channel is stopping with 1 pending publisher confirms
+2023-05-19 15:19:25.485041+00:00 [error] <0.1774.0> Error on AMQP connection <0.1774.0> (172.18.0.5:58940 -> 172.18.0.4:5672 - perf-test-producer-8, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.485041+00:00 [error] <0.1774.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.485490+00:00 [warning] <0.1757.0> Channel is stopping with 1 pending publisher confirms
+2023-05-19 15:19:25.484533+00:00 [error] <0.1384.0> Error on AMQP connection <0.1384.0> (172.18.0.5:34584 -> 172.18.0.4:5672 - perf-test-configuration-0, vhost: '/', user: 'guest', state: running), channel 0:
+2023-05-19 15:19:25.484533+00:00 [error] <0.1384.0>  operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2023-05-19 15:19:25.487152+00:00 [info] <0.2133.0> Closing all connections in vhost '/' on node 'rabbit@rmq0.local' because the vhost is stopping
+2023-05-19 15:19:25.487180+00:00 [info] <0.721.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent'
+2023-05-19 15:19:25.491369+00:00 [info] <0.721.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent' is stopped
+2023-05-19 15:19:25.491498+00:00 [info] <0.717.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient'
+2023-05-19 15:19:25.494322+00:00 [info] <0.717.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient' is stopped
+2023-05-19 15:19:25.495129+00:00 [info] <0.650.0> Management plugin: to stop collect_statistics.
+2023-05-19 15:19:30.503208+00:00 [notice] <0.44.0> Application rabbit exited with reason: stopped
+2023-05-19 15:19:30.503529+00:00 [info] <0.2044.0> Stopping application 'rabbitmq_prelaunch'
+2023-05-19 15:19:30.504451+00:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: stopped
+2023-05-19 15:19:30.504530+00:00 [info] <0.2044.0> Stopping application 'amqp_client'
+2023-05-19 15:19:30.505406+00:00 [notice] <0.44.0> Application amqp_client exited with reason: stopped
+2023-05-19 15:19:30.505515+00:00 [info] <0.2044.0> Stopping application 'rabbit_common'
+2023-05-19 15:19:30.505594+00:00 [notice] <0.44.0> Application rabbit_common exited with reason: stopped
+2023-05-19 15:19:30.505676+00:00 [info] <0.2044.0> Stopping application 'prometheus'
+2023-05-19 15:19:30.506640+00:00 [notice] <0.44.0> Application prometheus exited with reason: stopped
+2023-05-19 15:19:30.506729+00:00 [info] <0.2044.0> Stopping application 'ra'
+2023-05-19 15:19:30.530274+00:00 [notice] <0.44.0> Application ra exited with reason: stopped
+2023-05-19 15:19:30.530422+00:00 [info] <0.2044.0> Stopping application 'accept'
+2023-05-19 15:19:30.530533+00:00 [notice] <0.44.0> Application accept exited with reason: stopped
+2023-05-19 15:19:30.530645+00:00 [info] <0.2044.0> Stopping application 'os_mon'
+2023-05-19 15:19:30.531774+00:00 [notice] <0.44.0> Application os_mon exited with reason: stopped
+2023-05-19 15:19:30.531884+00:00 [info] <0.2044.0> Stopping application 'sysmon_handler'
+2023-05-19 15:19:30.532922+00:00 [notice] <0.44.0> Application sysmon_handler exited with reason: stopped
+2023-05-19 15:19:30.533030+00:00 [info] <0.2044.0> Stopping application 'osiris'
+2023-05-19 15:19:30.534098+00:00 [notice] <0.44.0> Application osiris exited with reason: stopped
+2023-05-19 15:19:30.534192+00:00 [info] <0.2044.0> Stopping application 'mnesia'
+2023-05-19 15:19:30.535986+00:00 [notice] <0.44.0> Application mnesia exited with reason: stopped
+2023-05-19 15:19:30.536070+00:00 [info] <0.2044.0> Successfully stopped RabbitMQ and its dependencies
+2023-05-19 15:19:57.123012+00:00 [info] <0.2044.0> RabbitMQ is asked to start...
+2023-05-19 15:19:57.464959+00:00 [notice] <0.44.0> Application syslog exited with reason: stopped
+2023-05-19 15:19:57.465025+00:00 [notice] <0.2230.0> Logging: switching to configured handler(s); following messages may not be visible in this log output
+2023-05-19 15:19:57.469591+00:00 [notice] <0.2230.0> Logging: configured log handlers are now ACTIVE
+2023-05-19 15:19:57.469667+00:00 [info] <0.2230.0> Logging: testing info log level
+2023-05-19 15:19:57.469710+00:00 [notice] <0.2230.0> Logging: testing notice log level
+2023-05-19 15:19:57.469767+00:00 [warning] <0.2230.0> Logging: testing warning log level
+2023-05-19 15:19:57.469819+00:00 [error] <0.2230.0> Logging: testing error log level
+2023-05-19 15:19:57.469877+00:00 [critical] <0.2230.0> Logging: testing critical log level
+2023-05-19 15:19:57.469938+00:00 [alert] <0.2230.0> Logging: testing alert log level
+2023-05-19 15:19:57.470003+00:00 [emergency] <0.2230.0> Logging: testing emergency log level
+2023-05-19 15:19:57.476837+00:00 [notice] <0.44.0> Application mnesia exited with reason: stopped
+2023-05-19 15:19:57.477066+00:00 [notice] <0.2230.0> Feature flags: checking nodes `rabbit@rmq0.local` and `rabbit@rmq1.local` compatibility...
+2023-05-19 15:19:57.480593+00:00 [notice] <0.2230.0> Feature flags: nodes `rabbit@rmq0.local` and `rabbit@rmq1.local` are compatible
+2023-05-19 15:19:57.490809+00:00 [error] <0.2278.0> Mnesia('rabbit@rmq0.local'): ** ERROR ** mnesia_event got {inconsistent_database, starting_partitioned_network, 'rabbit@rmq1.local'}
+2023-05-19 15:19:57.490809+00:00 [error] <0.2278.0> 
+2023-05-19 15:19:57.490983+00:00 [error] <0.2278.0> Mnesia('rabbit@rmq0.local'): ** ERROR ** mnesia_event got {inconsistent_database, starting_partitioned_network, 'rabbit@rmq2.local'}
+2023-05-19 15:19:57.490983+00:00 [error] <0.2278.0> 
+2023-05-19 15:19:57.503850+00:00 [info] <0.2230.0> ra: starting system quorum_queues
+2023-05-19 15:19:57.504331+00:00 [info] <0.2230.0> starting Ra system: quorum_queues in directory: /var/lib/rabbitmq/mnesia/rabbit@rmq0.local/quorum/rabbit@rmq0.local
+2023-05-19 15:19:57.505102+00:00 [info] <0.2321.0> ra system 'quorum_queues' running pre init for 10 registered servers
+2023-05-19 15:19:57.507687+00:00 [info] <0.2326.0> ra: meta data store initialised for system quorum_queues. 10 record(s) recovered
+2023-05-19 15:19:57.507865+00:00 [notice] <0.2331.0> WAL: ra_log_wal init, open tbls: ra_log_open_mem_tables, closed tbls: ra_log_closed_mem_tables
+2023-05-19 15:19:57.941348+00:00 [info] <0.2230.0> ra: starting system coordination
+2023-05-19 15:19:57.941888+00:00 [info] <0.2230.0> starting Ra system: coordination in directory: /var/lib/rabbitmq/mnesia/rabbit@rmq0.local/coordination/rabbit@rmq0.local
+2023-05-19 15:19:57.942600+00:00 [info] <0.2418.0> ra system 'coordination' running pre init for 0 registered servers
+2023-05-19 15:19:57.946190+00:00 [info] <0.2419.0> ra: meta data store initialised for system coordination. 0 record(s) recovered
+2023-05-19 15:19:57.946914+00:00 [notice] <0.2424.0> WAL: ra_coordination_log_wal init, open tbls: ra_coordination_log_open_mem_tables, closed tbls: ra_coordination_log_closed_mem_tables
+2023-05-19 15:19:57.951582+00:00 [info] <0.2230.0> 
+2023-05-19 15:19:57.951582+00:00 [info] <0.2230.0>  Starting RabbitMQ 3.11.16 on Erlang 25.3.2 [jit]
+2023-05-19 15:19:57.951582+00:00 [info] <0.2230.0>  Copyright (c) 2007-2023 VMware, Inc. or its affiliates.
+2023-05-19 15:19:57.951582+00:00 [info] <0.2230.0>  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0> 
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>  node           : rabbit@rmq0.local
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>  home dir       : /var/lib/rabbitmq
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>  config file(s) : /etc/rabbitmq/advanced.config
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>                 : /etc/rabbitmq/rabbitmq.conf
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>                 : /etc/rabbitmq/conf.d/10-defaults.conf
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>  cookie hash    : Cxa20p+SvDL0F/FPLBbqKg==
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>  log(s)         : /var/log/rabbitmq/rabbit@rmq0.local.log
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>                 : /var/log/rabbitmq/rabbit@rmq0.local_upgrade.log
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>                 : <stdout>
+2023-05-19 15:19:57.957277+00:00 [info] <0.2230.0>  database dir   : /var/lib/rabbitmq/mnesia/rabbit@rmq0.local
+2023-05-19 15:19:58.065159+00:00 [info] <0.2230.0> Running boot step pre_boot defined by app rabbit
+2023-05-19 15:19:58.065214+00:00 [info] <0.2230.0> Running boot step rabbit_global_counters defined by app rabbit
+2023-05-19 15:19:58.067162+00:00 [info] <0.2230.0> Running boot step rabbit_osiris_metrics defined by app rabbit
+2023-05-19 15:19:58.067384+00:00 [info] <0.2230.0> Running boot step rabbit_core_metrics defined by app rabbit
+2023-05-19 15:19:58.068011+00:00 [info] <0.2230.0> Running boot step rabbit_alarm defined by app rabbit
+2023-05-19 15:19:58.071674+00:00 [info] <0.2440.0> Memory high watermark set to 12788 MiB (13409909145 bytes) of 31971 MiB (33524772864 bytes) total
+2023-05-19 15:19:58.074316+00:00 [info] <0.2442.0> Enabling free disk space monitoring (disk free space: 253368991744, total memory: 33524772864)
+2023-05-19 15:19:58.074415+00:00 [info] <0.2442.0> Disk free limit set to 50MB
+2023-05-19 15:19:58.076475+00:00 [info] <0.2230.0> Running boot step code_server_cache defined by app rabbit
+2023-05-19 15:19:58.076662+00:00 [info] <0.2230.0> Running boot step file_handle_cache defined by app rabbit
+2023-05-19 15:19:58.077057+00:00 [info] <0.2445.0> Limiting to approx 1073741719 file handles (966367545 sockets)
+2023-05-19 15:19:58.077182+00:00 [info] <0.2446.0> FHC read buffering: OFF
+2023-05-19 15:19:58.077257+00:00 [info] <0.2446.0> FHC write buffering: ON
+2023-05-19 15:19:58.077547+00:00 [info] <0.2230.0> Running boot step worker_pool defined by app rabbit
+2023-05-19 15:19:58.077674+00:00 [info] <0.2426.0> Will use 8 processes for default worker pool
+2023-05-19 15:19:58.077750+00:00 [info] <0.2426.0> Starting worker pool 'worker_pool' with 8 processes in it
+2023-05-19 15:19:58.078212+00:00 [info] <0.2230.0> Running boot step database defined by app rabbit
+2023-05-19 15:19:58.132892+00:00 [info] <0.2230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-05-19 15:19:58.281377+00:00 [info] <0.2230.0> Successfully synced tables from a peer
+2023-05-19 15:19:58.281874+00:00 [info] <0.2230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-05-19 15:19:58.282580+00:00 [info] <0.2230.0> Successfully synced tables from a peer
+2023-05-19 15:19:58.343965+00:00 [info] <0.2230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-05-19 15:19:58.347157+00:00 [info] <0.2230.0> Successfully synced tables from a peer
+2023-05-19 15:19:58.347629+00:00 [info] <0.2230.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2023-05-19 15:19:58.355771+00:00 [info] <0.2230.0> Running boot step tracking_metadata_store defined by app rabbit
+2023-05-19 15:19:58.356706+00:00 [info] <0.2470.0> Setting up a table for connection tracking on this node: tracked_connection
+2023-05-19 15:19:58.357255+00:00 [info] <0.2470.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost
+2023-05-19 15:19:58.357880+00:00 [info] <0.2470.0> Setting up a table for per-user connection counting on this node: tracked_connection_per_user
+2023-05-19 15:19:58.360319+00:00 [info] <0.2470.0> Setting up a table for channel tracking on this node: tracked_channel
+2023-05-19 15:19:58.360890+00:00 [info] <0.2470.0> Setting up a table for channel tracking on this node: tracked_channel_per_user
+2023-05-19 15:19:58.363207+00:00 [info] <0.2230.0> Running boot step networking_metadata_store defined by app rabbit
+2023-05-19 15:19:58.364321+00:00 [info] <0.2230.0> Running boot step database_sync defined by app rabbit
+2023-05-19 15:19:58.365192+00:00 [info] <0.2230.0> Running boot step feature_flags defined by app rabbit
+2023-05-19 15:19:58.366386+00:00 [info] <0.2230.0> Running boot step codec_correctness_check defined by app rabbit
+2023-05-19 15:19:58.367127+00:00 [info] <0.2230.0> Running boot step external_infrastructure defined by app rabbit
+2023-05-19 15:19:58.367418+00:00 [info] <0.2230.0> Running boot step rabbit_event defined by app rabbit
+2023-05-19 15:19:58.368486+00:00 [info] <0.2230.0> Running boot step rabbit_registry defined by app rabbit
+2023-05-19 15:19:58.369491+00:00 [info] <0.2230.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2023-05-19 15:19:58.370389+00:00 [info] <0.2230.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2023-05-19 15:19:58.371061+00:00 [info] <0.2230.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2023-05-19 15:19:58.371540+00:00 [info] <0.2230.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2023-05-19 15:19:58.372093+00:00 [info] <0.2230.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2023-05-19 15:19:58.372653+00:00 [info] <0.2230.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2023-05-19 15:19:58.373223+00:00 [info] <0.2230.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2023-05-19 15:19:58.373647+00:00 [info] <0.2230.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2023-05-19 15:19:58.377974+00:00 [info] <0.2230.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2023-05-19 15:19:58.392830+00:00 [info] <0.2230.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2023-05-19 15:19:58.393302+00:00 [info] <0.2230.0> Running boot step rabbit_priority_queue defined by app rabbit
+2023-05-19 15:19:58.393579+00:00 [info] <0.2230.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2023-05-19 15:19:58.394906+00:00 [info] <0.2230.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2023-05-19 15:19:58.395539+00:00 [info] <0.2230.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2023-05-19 15:19:58.397456+00:00 [info] <0.2230.0> Running boot step kernel_ready defined by app rabbit
+2023-05-19 15:19:58.397620+00:00 [info] <0.2230.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2023-05-19 15:19:58.397985+00:00 [info] <0.2230.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2023-05-19 15:20:06.115673+00:00 [info] <0.2479.0> epmd does not know us, re-registering as rabbit
+2023-05-19 15:20:06.116293+00:00 [info] <0.2230.0> Running boot step guid_generator defined by app rabbit
+2023-05-19 15:20:06.121832+00:00 [info] <0.2230.0> Running boot step rabbit_node_monitor defined by app rabbit
+2023-05-19 15:20:06.123902+00:00 [info] <0.2533.0> Starting rabbit_node_monitor
+2023-05-19 15:20:06.124480+00:00 [info] <0.2230.0> Running boot step delegate_sup defined by app rabbit
+2023-05-19 15:20:06.126764+00:00 [info] <0.2230.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2023-05-19 15:20:06.127640+00:00 [info] <0.2230.0> Running boot step rabbit_fifo_dlx_sup defined by app rabbit
+2023-05-19 15:20:06.128365+00:00 [info] <0.2230.0> Running boot step core_initialized defined by app rabbit
+2023-05-19 15:20:06.128679+00:00 [info] <0.2230.0> Running boot step upgrade_queues defined by app rabbit
+2023-05-19 15:20:06.147735+00:00 [info] <0.2230.0> Running boot step channel_tracking defined by app rabbit
+2023-05-19 15:20:06.148147+00:00 [info] <0.2230.0> Running boot step rabbit_channel_tracking_handler defined by app rabbit
+2023-05-19 15:20:06.148811+00:00 [info] <0.2230.0> Running boot step connection_tracking defined by app rabbit
+2023-05-19 15:20:06.149260+00:00 [info] <0.2230.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2023-05-19 15:20:06.149844+00:00 [info] <0.2230.0> Running boot step rabbit_definitions_hashing defined by app rabbit
+2023-05-19 15:20:06.150348+00:00 [info] <0.2230.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2023-05-19 15:20:06.150903+00:00 [info] <0.2230.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2023-05-19 15:20:06.157200+00:00 [info] <0.2230.0> Running boot step rabbit_policies defined by app rabbit
+2023-05-19 15:20:06.158954+00:00 [info] <0.2230.0> Running boot step rabbit_policy defined by app rabbit
+2023-05-19 15:20:06.159565+00:00 [info] <0.2230.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2023-05-19 15:20:06.160282+00:00 [info] <0.2230.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2023-05-19 15:20:06.160872+00:00 [info] <0.2230.0> Running boot step rabbit_stream_coordinator defined by app rabbit
+2023-05-19 15:20:06.161523+00:00 [info] <0.2230.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2023-05-19 15:20:06.162146+00:00 [info] <0.2230.0> Running boot step rabbit_federation_parameters defined by app rabbitmq_federation
+2023-05-19 15:20:06.162974+00:00 [info] <0.2230.0> Running boot step rabbit_federation_supervisor defined by app rabbitmq_federation
+2023-05-19 15:20:06.172551+00:00 [info] <0.2230.0> Running boot step rabbit_federation_queue defined by app rabbitmq_federation
+2023-05-19 15:20:06.173879+00:00 [info] <0.2230.0> Running boot step rabbit_federation_upstream_exchange defined by app rabbitmq_federation
+2023-05-19 15:20:06.174592+00:00 [info] <0.2230.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2023-05-19 15:20:06.175261+00:00 [info] <0.2230.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2023-05-19 15:20:06.175707+00:00 [info] <0.2230.0> Management plugin: using rates mode 'basic'
+2023-05-19 15:20:06.180122+00:00 [info] <0.2230.0> Running boot step recovery defined by app rabbit
+2023-05-19 15:20:06.184155+00:00 [info] <0.2576.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2023-05-19 15:20:06.192606+00:00 [info] <0.2576.0> Starting message stores for vhost '/'
+2023-05-19 15:20:06.193167+00:00 [info] <0.2580.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2023-05-19 15:20:06.199553+00:00 [info] <0.2576.0> Started message store of type transient for vhost '/'
+2023-05-19 15:20:06.200248+00:00 [info] <0.2584.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2023-05-19 15:20:06.205230+00:00 [info] <0.2576.0> Started message store of type persistent for vhost '/'
+2023-05-19 15:20:06.205944+00:00 [info] <0.2576.0> Recovering 0 queues of type rabbit_classic_queue took 20ms
+2023-05-19 15:20:06.454567+00:00 [info] <0.2576.0> Recovering 10 queues of type rabbit_quorum_queue took 248ms
+2023-05-19 15:20:06.454667+00:00 [info] <0.2576.0> Recovering 0 queues of type rabbit_stream_queue took 0ms
+2023-05-19 15:20:06.462098+00:00 [info] <0.2230.0> Running boot step empty_db_check defined by app rabbit
+2023-05-19 15:20:06.462228+00:00 [info] <0.2230.0> Will not seed default virtual host and user: have definitions to load...
+2023-05-19 15:20:06.462387+00:00 [info] <0.2230.0> Running boot step rabbit_observer_cli defined by app rabbit
+2023-05-19 15:20:06.462541+00:00 [info] <0.2230.0> Running boot step rabbit_looking_glass defined by app rabbit
+2023-05-19 15:20:06.462732+00:00 [info] <0.2230.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2023-05-19 15:20:06.463043+00:00 [info] <0.2230.0> Running boot step background_gc defined by app rabbit
+2023-05-19 15:20:06.463364+00:00 [info] <0.2230.0> Running boot step routing_ready defined by app rabbit
+2023-05-19 15:20:06.463416+00:00 [info] <0.2230.0> Running boot step pre_flight defined by app rabbit
+2023-05-19 15:20:06.463527+00:00 [info] <0.2230.0> Running boot step notify_cluster defined by app rabbit
+2023-05-19 15:20:06.463747+00:00 [info] <0.2230.0> Running boot step networking defined by app rabbit
+2023-05-19 15:20:06.463959+00:00 [info] <0.2230.0> Running boot step definition_import_worker_pool defined by app rabbit
+2023-05-19 15:20:06.464130+00:00 [info] <0.2426.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2023-05-19 15:20:06.464480+00:00 [info] <0.2533.0> rabbit on node 'rabbit@rmq1.local' up
+2023-05-19 15:20:06.464729+00:00 [info] <0.2230.0> Running boot step cluster_name defined by app rabbit
+2023-05-19 15:20:06.464909+00:00 [info] <0.2230.0> Running boot step direct_client defined by app rabbit
+2023-05-19 15:20:06.466031+00:00 [info] <0.2230.0> Running boot step rabbit_federation_exchange defined by app rabbitmq_federation
+2023-05-19 15:20:06.466371+00:00 [info] <0.2230.0> Running boot step rabbit_maintenance_mode_state defined by app rabbit
+2023-05-19 15:20:06.466490+00:00 [info] <0.2230.0> Creating table rabbit_node_maintenance_states for maintenance mode status
+2023-05-19 15:20:06.467103+00:00 [info] <0.2230.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2023-05-19 15:20:06.467912+00:00 [info] <0.2657.0> Resetting node maintenance status
+2023-05-19 15:20:06.488376+00:00 [info] <0.2533.0> rabbit on node 'rabbit@rmq2.local' up
+2023-05-19 15:20:06.509507+00:00 [info] <0.2718.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2023-05-19 15:20:06.509641+00:00 [info] <0.2746.0> Statistics database started.
+2023-05-19 15:20:06.509764+00:00 [info] <0.2745.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2023-05-19 15:20:06.516927+00:00 [info] <0.2761.0> Peer discovery: node cleanup is disabled
+2023-05-19 15:20:06.523138+00:00 [info] <0.2775.0> Prometheus metrics: HTTP (non-TLS) listener started on port 15692
+2023-05-19 15:20:06.523387+00:00 [info] <0.2657.0> Ready to start client connection listeners
+2023-05-19 15:20:06.574458+00:00 [info] <0.2605.0> queue ''perf-test-003'' in vhost '/': detected a new leader {'%2F_\'perf-test-003\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:20:06.678771+00:00 [info] <0.2625.0> queue ''perf-test-002'' in vhost '/': detected a new leader {'%2F_\'perf-test-002\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:20:06.780857+00:00 [info] <0.2593.0> queue ''perf-test-000'' in vhost '/': detected a new leader {'%2F_\'perf-test-000\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:20:06.792946+00:00 [info] <0.2629.0> queue ''perf-test-006'' in vhost '/': detected a new leader {'%2F_\'perf-test-006\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:20:06.812560+00:00 [info] <0.2597.0> queue ''perf-test-001'' in vhost '/': detected a new leader {'%2F_\'perf-test-001\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:20:06.826184+00:00 [info] <0.2609.0> queue ''perf-test-004'' in vhost '/': detected a new leader {'%2F_\'perf-test-004\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:20:06.904428+00:00 [info] <0.2601.0> queue ''perf-test-008'' in vhost '/': detected a new leader {'%2F_\'perf-test-008\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:20:06.930055+00:00 [info] <0.2613.0> queue ''perf-test-009'' in vhost '/': detected a new leader {'%2F_\'perf-test-009\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:20:06.983590+00:00 [info] <0.2617.0> queue ''perf-test-007'' in vhost '/': detected a new leader {'%2F_\'perf-test-007\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:20:07.005150+00:00 [info] <0.2621.0> queue ''perf-test-005'' in vhost '/': detected a new leader {'%2F_\'perf-test-005\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:20:35.566009+00:00 [error] <0.2158.0> ** Node 'rabbit@rmq1.local' not responding **
+2023-05-19 15:20:35.566009+00:00 [error] <0.2158.0> ** Removing (timedout) connection **
+2023-05-19 15:20:35.566009+00:00 [error] <0.2158.0> 
+2023-05-19 15:20:35.565965+00:00 [error] <0.2162.0> ** Node 'rabbit@rmq2.local' not responding **
+2023-05-19 15:20:35.565965+00:00 [error] <0.2162.0> ** Removing (timedout) connection **
+2023-05-19 15:20:35.565965+00:00 [error] <0.2162.0> 
+2023-05-19 15:20:35.566937+00:00 [info] <0.2533.0> rabbit on node 'rabbit@rmq1.local' down
+2023-05-19 15:20:35.581227+00:00 [info] <0.2533.0> rabbit on node 'rabbit@rmq2.local' down
+2023-05-19 15:20:35.594153+00:00 [info] <0.2533.0> node 'rabbit@rmq2.local' down: net_tick_timeout
+2023-05-19 15:20:35.594492+00:00 [warning] <0.2533.0> Cluster minority/secondary status detected - awaiting recovery
+2023-05-19 15:20:35.594779+00:00 [info] <0.2533.0> node 'rabbit@rmq1.local' down: net_tick_timeout
+2023-05-19 15:20:35.595392+00:00 [warning] <0.2533.0> Cluster minority/secondary status detected - awaiting recovery
+2023-05-19T15:21:10.865723+00:00 warning: FORMATTER CRASH: {"epmd does not know us, re-registering ~s at port ~b",["rabbit",undefined]}
+2023-05-19 15:21:34.373197+00:00 [info] <0.2533.0> node 'rabbit@rmq1.local' up
+2023-05-19 15:21:34.374596+00:00 [error] <0.2278.0> Mnesia('rabbit@rmq0.local'): ** ERROR ** mnesia_event got {inconsistent_database, running_partitioned_network, 'rabbit@rmq1.local'}
+2023-05-19 15:21:34.374596+00:00 [error] <0.2278.0> 
+2023-05-19 15:21:34.383681+00:00 [info] <0.2621.0> queue ''perf-test-005'' in vhost '/': detected a new leader {'%2F_\'perf-test-005\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:21:34.384015+00:00 [info] <0.2601.0> queue ''perf-test-008'' in vhost '/': detected a new leader {'%2F_\'perf-test-008\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:21:34.384011+00:00 [info] <0.2597.0> queue ''perf-test-001'' in vhost '/': detected a new leader {'%2F_\'perf-test-001\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:21:34.385636+00:00 [info] <0.2609.0> queue ''perf-test-004'' in vhost '/': detected a new leader {'%2F_\'perf-test-004\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:21:34.612758+00:00 [info] <0.2605.0> queue ''perf-test-003'' in vhost '/': detected a new leader {'%2F_\'perf-test-003\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:21:35.288717+00:00 [info] <0.2617.0> queue ''perf-test-007'' in vhost '/': detected a new leader {'%2F_\'perf-test-007\'','rabbit@rmq1.local'} in term 2
+2023-05-19 15:21:41.373002+00:00 [warning] <0.3231.0> 'global' at 'rabbit@rmq0.local' failed to connect to 'rabbit@rmq2.local'
+2023-05-19 15:21:41.373002+00:00 [warning] <0.3231.0> 
+2023-05-19 15:21:45.867791+00:00 [info] <0.2533.0> node 'rabbit@rmq2.local' up
+2023-05-19 15:21:45.869697+00:00 [error] <0.2278.0> Mnesia('rabbit@rmq0.local'): ** ERROR ** mnesia_event got {inconsistent_database, running_partitioned_network, 'rabbit@rmq2.local'}
+2023-05-19 15:21:45.869697+00:00 [error] <0.2278.0> 
+2023-05-19 15:21:45.885609+00:00 [info] <0.2613.0> queue ''perf-test-009'' in vhost '/': detected a new leader {'%2F_\'perf-test-009\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:21:45.885532+00:00 [info] <0.2625.0> queue ''perf-test-002'' in vhost '/': detected a new leader {'%2F_\'perf-test-002\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:21:45.885751+00:00 [info] <0.2629.0> queue ''perf-test-006'' in vhost '/': detected a new leader {'%2F_\'perf-test-006\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:21:46.968359+00:00 [info] <0.2593.0> queue ''perf-test-000'' in vhost '/': detected a new leader {'%2F_\'perf-test-000\'','rabbit@rmq2.local'} in term 2
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> 
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> BOOT FAILED
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> ===========
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> Error during startup: {error,no_epmd_port}
+2023-05-19 15:22:11.868396+00:00 [error] <0.2657.0> 
+2023-05-19T15:22:11.865653+00:00 warning: FORMATTER CRASH: {"epmd does not know us, re-registering ~s at port ~b",["rabbit",undefined]}
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0> Stopping RabbitMQ applications and their dependencies in the following order:
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_federation_management
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_top
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_management
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_prometheus
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_web_dispatch
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     cowboy
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     cowlib
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_management_agent
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_federation
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_peer_discovery_common
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbit
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbitmq_prelaunch
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     amqp_client
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     rabbit_common
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     prometheus
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     ra
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     accept
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     os_mon
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     sysmon_handler
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     osiris
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0>     mnesia
+2023-05-19 15:22:13.152893+00:00 [info] <0.2657.0> 
+2023-05-19 15:22:13.153171+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_federation_management'
+2023-05-19 15:22:13.153259+00:00 [notice] <0.44.0> Application rabbitmq_federation_management exited with reason: stopped
+2023-05-19 15:22:13.153386+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_top'
+2023-05-19 15:22:13.155253+00:00 [notice] <0.44.0> Application rabbitmq_top exited with reason: stopped
+2023-05-19 15:22:13.155415+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_management'
+2023-05-19 15:22:13.158242+00:00 [warning] <0.2710.0> HTTP listener registry could not find context rabbitmq_management_tls
+2023-05-19 15:22:13.159651+00:00 [notice] <0.44.0> Application rabbitmq_management exited with reason: stopped
+2023-05-19 15:22:13.159768+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_prometheus'
+2023-05-19 15:22:13.161715+00:00 [warning] <0.2710.0> HTTP listener registry could not find context rabbitmq_prometheus_tls
+2023-05-19 15:22:13.162941+00:00 [notice] <0.44.0> Application rabbitmq_prometheus exited with reason: stopped
+2023-05-19 15:22:13.163054+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_web_dispatch'
+2023-05-19 15:22:13.165519+00:00 [notice] <0.44.0> Application rabbitmq_web_dispatch exited with reason: stopped
+2023-05-19 15:22:13.165687+00:00 [info] <0.2657.0> Stopping application 'cowboy'
+2023-05-19 15:22:13.166937+00:00 [notice] <0.44.0> Application cowboy exited with reason: stopped
+2023-05-19 15:22:13.167037+00:00 [info] <0.2657.0> Stopping application 'cowlib'
+2023-05-19 15:22:13.167109+00:00 [notice] <0.44.0> Application cowlib exited with reason: stopped
+2023-05-19 15:22:13.167216+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_management_agent'
+2023-05-19 15:22:13.169640+00:00 [notice] <0.44.0> Application rabbitmq_management_agent exited with reason: stopped
+2023-05-19 15:22:13.169763+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_federation'
+2023-05-19 15:22:13.171182+00:00 [notice] <0.44.0> Application rabbitmq_federation exited with reason: stopped
+2023-05-19 15:22:13.172206+00:00 [info] <0.2657.0> Stopping application 'rabbitmq_peer_discovery_common'
+2023-05-19 15:22:13.173507+00:00 [notice] <0.44.0> Application rabbitmq_peer_discovery_common exited with reason: stopped
+2023-05-19 15:22:13.173619+00:00 [info] <0.2657.0> Stopping application 'rabbit'
+2023-05-19 15:22:13.173797+00:00 [info] <0.2230.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping unregistration.
+2023-05-19 15:22:13.174256+00:00 [info] <0.3428.0> Closing all connections in vhost '/' on node 'rabbit@rmq0.local' because the vhost is stopping
+2023-05-19 15:22:13.174308+00:00 [info] <0.2584.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent'
+2023-05-19 15:22:13.179395+00:00 [info] <0.2584.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent' is stopped
+2023-05-19 15:22:13.179564+00:00 [info] <0.2580.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient'
+2023-05-19 15:22:13.185711+00:00 [info] <0.2580.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rmq0.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient' is stopped
+2023-05-19 15:22:13.187160+00:00 [info] <0.2474.0> Management plugin: to stop collect_statistics.
+2023-05-19 15:22:18.196774+00:00 [notice] <0.44.0> Application rabbit exited with reason: stopped
+2023-05-19 15:22:18.327840+00:00 [error] <0.2044.0> rabbit_outside_app_process:
+2023-05-19 15:22:18.327840+00:00 [error] <0.2044.0> {error,no_epmd_port}
+2023-05-19 15:22:18.327840+00:00 [error] <0.2044.0> [{rabbit,start_it,1,[{file,"rabbit.erl"},{line,418}]},
+2023-05-19 15:22:18.327840+00:00 [error] <0.2044.0>  {rabbit_node_monitor,do_run_outside_app_fun,1,
+2023-05-19 15:22:18.327840+00:00 [error] <0.2044.0>                       [{file,"rabbit_node_monitor.erl"},{line,795}]}]
+2023-05-19 15:26:23.378224+00:00 [notice] <0.61.0> SIGTERM received - shutting down
+2023-05-19 15:26:23.378224+00:00 [notice] <0.61.0> 
