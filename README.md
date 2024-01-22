@@ -28,6 +28,8 @@ make up
 
 ## Reconnect
 
+NOTE: https://github.com/rabbitmq/rabbitmq-server/issues/8114#issuecomment-1557548489
+
 ```
 docker network connect --alias rmq0.local rabbitnet rabbitmq-server-8113-rmq0-1
 ```
